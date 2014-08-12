@@ -1,0 +1,606 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	padding-left: 1%;
+	padding-right: 1%;
+	clear: none;
+	float: none;
+}
+
+
+/****************************************/
+/******** STYLING FOR HOMEPAGE **********/
+/****************************************/
+
+#selectProduct {
+	font-family: Roboto !important;
+	font-weight: lighter;
+	margin-top: 0.5em;
+	font-size: 1.2em;
+	margin-bottom: 2.2em;
+	margin-left: 2%;
+}
+
+#banner {
+	background-image: url(images/red_textured_metal.gif);
+	text-align: center;
+	min-height: 60px;
+}
+
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	
+}
+
+.button {
+	width: 110px;
+	border-radius: 1.1em;
+	border: thick double #9A9A9A;
+	margin-bottom: 2.2em;
+}
+
+.button:hover {
+	-webkit-box-shadow: 0px 0px 1em 0.2em #AC0000;
+	box-shadow: 0px 0px 1em 0.2em #AC0000;	
+}
+#mainnav {
+	margin-top: -1.5em;
+}
+
+.buttonContainer { 
+	text-align: center; 
+	margin-bottom: -1.5em;
+}
+
+.preview {
+	background: #d9edf7; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI5ODlkOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzIwN2NjYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #d9edf7 0, #b9def0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0,#d9edf7), color-stop(100%,#b9def0), 							color-stop(100%,#b9def0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #d9edf7 0, #b9def0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #d9edf7 0,#b9def0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #d9edf7 0,#b9def0 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #d9edf7 0,#b9def0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9edf7', endColorstr='#b9def0',GradientType=0 ); /* IE6-8 */
+	background-repeat: repeat-x;
+	border: 4px solid #9acfea;
+	color: #31708f;
+	border-radius: 4px;
+	font-family: sans-serif;
+	text-align: center;
+	margin-bottom: 3em;
+}
+
+
+.info { 
+	text-align: center; 
+	margin-bottom: 1.5em;
+}
+
+.previewList { 	
+	text-align: left; 
+	font-size: 14px;
+}
+
+#infoExplanation {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.5em;
+	padding-top: 1em;
+	padding-bottom:1em;
+	width: 95%;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	border-top: thin solid #D4D4D4;
+	border-bottom: thin solid #D4D4D4;
+}
+
+footer {
+	margin-top: 1.75em;
+	text-align: center;
+ 	font-size: 14px;
+}
+
+.zeroMargin_mobile {
+margin-left: 0;
+}
+
+.hide_mobile {
+display: none;
+}
+
+/*********************************************/
+/******** STYLING FOR PRODUCT PAGES **********/
+/*********************************************/
+
+#product {
+	font-family: source-sans-pro;
+	text-align: center;
+	font-style: normal;
+	font-weight: 400;
+}
+
+#product h1 { font-size: 24px; }
+
+#highlights { margin-bottom: 2.5em; }
+#highlights ul {
+	font-size: 18px;
+	font-family: "Segoe UI","proxima-nova","proxima-nova-1","proxima-nova-2","Proxima Nova",Helvetica,Arial,sans-serif;
+	list-style-image: url(images/star.png);
+}
+
+
+#highlights h2 {
+	color: white;
+	font-family: source-sans-pro;
+	background-color: #B70000;
+	text-align: center;
+}
+
+#extraInfo ul h2 {
+	font-family: source-sans-pro; 
+	color: #B70000;
+	font-size: 22px;	
+}
+
+#extraInfo ul li h2 {
+	color: black;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+#extraInfo ul li {
+	font-family: "Segoe UI","proxima-nova","proxima-nova-1","proxima-nova-2","Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 14px;	
+}
+#section h2 {
+	font-family: source-sans-pro; 
+	color: #B70000;
+	font-size: 22px;
+	margin-bottom: -0.5em;	
+}
+
+#section { margin-bottom: 2em; }
+#section p {
+	font-family: "Segoe UI","proxima-nova","proxima-nova-1","proxima-nova-2","Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 16px;	
+}
+#extraInfo ul {
+	list-style-type: none;
+	margin-bottom: 3.5em;
+}
+
+#extraInfo { text-align: left; }
+
+
+#container1 {
+	width: 100%;	
+	text-align: center;
+}
+
+#container2 {
+	width: 100%;	
+}
+
+body { overflow-y: scroll; }
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 768px) {
+
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+
+/****************************************/
+/******** STYLING FOR HOMEPAGE **********/
+/****************************************/
+
+#banner { height: 150px; }
+
+.button { width: 140px;	}
+
+#selectProduct {
+	margin-top: 0.7em;
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 1.7em;
+	margin-left: 11%;
+}
+
+#mainnav {
+	margin-top: -1em;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#H9B_frames {
+	float: left;
+	width: 33.33333%;
+}
+
+#H9L_frames {
+	float: left;
+	width: 33.33333%;	
+}
+
+#H9_fasteners {
+	float: left;
+	width: 33.33333%;	
+}
+
+#infoExplanation { 
+	width: 90%; 
+	padding-top: 1.5em;
+	padding-bottom: 2em;	
+}
+
+.hide_tablet {
+	
+display: none;
+	
+}
+
+.zeroMargin_tablet {
+	
+margin-left: 0;
+	
+}
+
+/*********************************************/
+/******** STYLING FOR PRODUCT PAGES **********/
+/*********************************************/
+
+#product h1 { 
+	font-size: 32px;
+}
+
+#mainImage {
+	margin-right: 2.5em;		
+}
+
+#highlights {
+	
+}
+
+#highlights ul {
+	font-size: 18px;
+}
+
+#extraInfo ul h2 {
+	font-size: 22px;	
+}
+
+#extraInfo ul li h2 {
+	font-size: 18px;	
+}
+
+#extraInfo ul li {
+	font-size: 14px;	
+}
+#section h2 {
+	font-size: 22px;	
+}
+
+#section p {
+	font-size: 16px;	
+}
+
+#container1 {
+	float: left;
+	width: 40%;	
+	text-align: left;
+}
+
+#container2 {
+	float: left;
+	width: 60%;	
+}
+
+}
+
+
+
+/* Lower Res Desktop Layout */
+@media only screen and (min-width: 992px) {
+	.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+
+/****************************************/
+/******** STYLING FOR HOMEPAGE **********/
+/****************************************/
+
+
+#banner { height: 150px; }
+
+.button { width: 140px;	}
+
+#selectProduct {
+	margin-top: 0.7em;
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 1.7em;
+	margin-left: 11%;
+}
+
+#mainnav {
+	margin-top: -1em;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#H9B_frames {
+	float: left;
+	width: 33.33333%;
+}
+
+#H9L_frames {
+	float: left;
+	width: 33.33333%;	
+}
+
+#H9_fasteners {
+	float: left;
+	width: 33.33333%;	
+}
+
+#infoExplanation { 
+	width: 80%; 
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+}
+
+.zeroMargin_desktop {
+		
+margin-left: 0;
+		
+}
+
+.hide_desktop {
+		
+display: none;
+		
+}
+
+
+/*********************************************/
+/******** STYLING FOR PRODUCT PAGES **********/
+/*********************************************/
+
+#product h1 { 
+	font-size: 34px;
+}
+
+#mainImage {
+	margin-right: 2.5em;		
+}
+
+#highlights {
+	
+}
+
+#highlights ul {
+	font-size: 20px;
+}
+
+#extraInfo ul h2 {
+	font-size: 24px;	
+}
+
+#extraInfo ul li h2 {
+	font-size: 20px;	
+}
+
+#extraInfo ul li {
+	font-size: 16px;	
+}
+#section h2 {
+	font-size: 24px;	
+}
+
+#section p {
+	font-size: 16px;	
+}
+
+#container1 {
+	float: left;
+	width: 40%;	
+	text-align: left;
+}
+
+#container2 {
+	float: left;
+	width: 60%;	
+}
+
+
+
+}
+
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1200px) {
+
+.gridContainer {
+	width: 88%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+
+/****************************************/
+/******** STYLING FOR HOMEPAGE **********/
+/****************************************/
+
+#banner { height: 150px; }
+
+.title {
+	font-size: 1.75em;	
+}
+
+.button { width: 140px;	}
+
+#selectProduct {
+	margin-top: 0.7em;
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 1.7em;
+	margin-left: 11%;
+}
+#mainnav {
+	margin-top: -1em;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#H9B_frames {
+	float: left;
+	width: 33.33333%;
+}
+
+#H9L_frames {
+	float: left;
+	width: 33.33333%;	
+}
+
+#H9_fasteners {
+	float: left;
+	width: 33.33333%;	
+}
+
+#infoExplanation { 
+	width: 50%; 
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+}
+
+footer {
+	margin-bottom: 1.5em;	
+}
+
+/*********************************************/
+/******** STYLING FOR PRODUCT PAGES **********/
+/*********************************************/
+
+#product h1 { 
+	font-size: 36px;
+}
+
+#mainImage {
+	margin-right: 2.5em;		
+}
+
+#highlights ul {
+	font-size: 22px;
+}
+
+#extraInfo ul h2 {
+	font-size: 26px;	
+}
+
+#extraInfo ul li h2 {
+	font-size: 22px;	
+}
+
+#extraInfo ul li {
+	font-size: 18px;	
+}
+#section h2 {
+	font-size: 26px;	
+}
+
+#section p {
+	font-size: 18px;	
+}
+
+#container1 {
+	float: left;
+	width: 40%;
+	text-align: left;	
+}
+
+#container2 {
+	float: left;
+	width: 60%;	
+}
+
+}
